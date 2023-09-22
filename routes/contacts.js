@@ -9,7 +9,7 @@ router.get('/', contactsController.getAllContacts);
 
 // get single contact from db
 router.get('/:id', contactsController.getSingleContact);
-console.log('Get Single contact ' + contactsController.getSingleContact);
+//console.log('Get Single contact ' + contactsController.getSingleContact);
 
 
 // exports

@@ -9,3 +9,18 @@ GET http://localhost:3000/contacts/650ba0d185570f2b30ac52ea
 
 // get Allan's info
 GET http://localhost:3000/contacts/650ba0e285570f2b30ac52eb
+
+
+
+
+// get all contacts info on Render
+GET https://cse341-afb3.onrender.com/contacts
+
+// get Brandy's info on Render
+GET https://cse341-afb3.onrender.com/contacts/650ba03e85570f2b30ac52e9
+
+// get Jeff's info on Render
+GET https://cse341-afb3.onrender.com/contacts/650ba0d185570f2b30ac52ea
+
+// get Allan's info on Render
+GET https://cse341-afb3.onrender.com/contacts/650ba0e285570f2b30ac52eb
