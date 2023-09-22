@@ -1,8 +1,13 @@
-const routes = require('express').Router();
+const express = require('express');
+const router = express.Router();
 const lesson1Controller = require('../controllers/lesson1');
 
-routes.get('/', lesson1Controller.brandyRoute);
-routes.get('/allan', lesson1Controller.allanRoute);
-routes.get('/jeff', lesson1Controller.jeffRoute);
+router.use('/contacts', require('./contacts'));
 
-module.exports = routes;
+router.get('/', lesson1Controller.brandyRoute);
+router.get('/jeff', lesson1Controller.jeffRoute);
+router.get('/allan', lesson1Controller.allanRoute);
+
+
+
+module.exports = router;
