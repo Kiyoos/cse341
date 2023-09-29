@@ -1,26 +1,57 @@
-// get all contacts info
+// LOCALHOST REQUESTS
+
+### get all contacts info
 GET http://localhost:3000/contacts
 
-// get Brandy's info
+### get Brandy's info
 GET http://localhost:3000/contacts/650ba03e85570f2b30ac52e9
 
-// get Jeff's info
+### get Jeff's info
 GET http://localhost:3000/contacts/650ba0d185570f2b30ac52ea
 
-// get Allan's info
+### get Emmri's info
 GET http://localhost:3000/contacts/650ba0e285570f2b30ac52eb
 
+### Create new contact
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
 
+{
+  "firstName": "Annelise",
+  "lastName": "Stinson",
+  "birthday": "Septeber 2",
+  "email": "astinson@email.com",
+  "favoriteColor": "blue"  
+}
 
+### Get new contact created above - MUST REPLACE ID!!!
+GET http://localhost:3000/contacts/651590302066e9e357df8aee
 
-// get all contacts info on Render
+### Delete contact by ID - MUST REPLACE ID!!!
+DELETE http://localhost:3000/contacts/6516d9acfc426d06c536a77d
+
+### Update existing contact - MUST REPLACE ID!!!
+PUT http://localhost:3000/contacts/6516d9acfc426d06c536a77d HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Tauren",
+  "lastName": "Stinson",
+  "birthday": "May 25",
+  "email": "tstinson@email.com",
+  "favoriteColor": "green"  
+}
+
+// RENDER REQUESTS
+
+### get all contacts info on Render
 GET https://cse341-afb3.onrender.com/contacts
 
-// get Brandy's info on Render
+### get Brandy's info on Render
 GET https://cse341-afb3.onrender.com/contacts/650ba03e85570f2b30ac52e9
 
-// get Jeff's info on Render
+### get Jeff's info on Render
 GET https://cse341-afb3.onrender.com/contacts/650ba0d185570f2b30ac52ea
 
-// get Allan's info on Render
+### get Emmri's info on Render
 GET https://cse341-afb3.onrender.com/contacts/650ba0e285570f2b30ac52eb

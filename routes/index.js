@@ -8,6 +8,4 @@ router.get('/', lesson1Controller.brandyRoute);
 router.get('/jeff', lesson1Controller.jeffRoute);
 router.get('/allan', lesson1Controller.allanRoute);
 
-
-
 module.exports = router;
