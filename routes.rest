@@ -24,14 +24,8 @@ content-type: application/json
   "favoriteColor": "blue"  
 }
 
-### Get new contact created above - MUST REPLACE ID!!!
-GET http://localhost:3000/contacts/651590302066e9e357df8aee
-
-### Delete contact by ID - MUST REPLACE ID!!!
-DELETE http://localhost:3000/contacts/6516d9acfc426d06c536a77d
-
 ### Update existing contact - MUST REPLACE ID!!!
-PUT http://localhost:3000/contacts/6516d9acfc426d06c536a77d HTTP/1.1
+PUT http://localhost:3000/contacts/650ba0d185570f2b30ac52ea HTTP/1.1
 content-type: application/json
 
 {
@@ -41,6 +35,9 @@ content-type: application/json
   "email": "tstinson@email.com",
   "favoriteColor": "green"  
 }
+
+### Delete contact by ID - MUST REPLACE ID!!!
+DELETE http://localhost:3000/contacts/6516d9acfc426d06c536a77d
 
 // RENDER REQUESTS
 
@@ -55,3 +52,30 @@ GET https://cse341-afb3.onrender.com/contacts/650ba0d185570f2b30ac52ea
 
 ### get Emmri's info on Render
 GET https://cse341-afb3.onrender.com/contacts/650ba0e285570f2b30ac52eb
+
+### Create new contact
+POST https://cse341-afb3.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Annelise",
+  "lastName": "Stinson",
+  "birthday": "Septeber 2",
+  "email": "astinson@email.com",
+  "favoriteColor": "blue"  
+}
+
+### Update existing contact - MUST REPLACE ID!!!
+PUT https://cse341-afb3.onrender.com/contacts/6516ddabfc426d06c536a77f HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "Tauren",
+  "lastName": "Stinson",
+  "birthday": "May 25",
+  "email": "tstinson@email.com",
+  "favoriteColor": "green"  
+}
+
+### Delete contact by ID - MUST REPLACE ID!!!
+DELETE https://cse341-afb3.onrender.com/contacts/6516ddabfc426d06c536a77f
