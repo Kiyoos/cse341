@@ -12,6 +12,9 @@ GET http://localhost:3000/contacts/650ba0d185570f2b30ac52ea
 ### get Emmri's info
 GET http://localhost:3000/contacts/650ba0e285570f2b30ac52eb
 
+### get recently created contact's info - MUST REPLACE ID!!!
+GET http://localhost:3000/contacts/650ba0e285570f2b30ac52eb
+
 ### Create new contact
 POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
@@ -53,6 +56,9 @@ GET https://cse341-afb3.onrender.com/contacts/650ba0d185570f2b30ac52ea
 ### get Emmri's info on Render
 GET https://cse341-afb3.onrender.com/contacts/650ba0e285570f2b30ac52eb
 
+### get resently created contact's info on Render - MUST REPLACE ID!!!
+GET https://cse341-afb3.onrender.com/contacts/6516e0d471be9aaadadc3570
+
 ### Create new contact
 POST https://cse341-afb3.onrender.com/contacts HTTP/1.1
 content-type: application/json
@@ -66,7 +72,7 @@ content-type: application/json
 }
 
 ### Update existing contact - MUST REPLACE ID!!!
-PUT https://cse341-afb3.onrender.com/contacts/6516ddabfc426d06c536a77f HTTP/1.1
+PUT https://cse341-afb3.onrender.com/contacts/6516e0d471be9aaadadc3570 HTTP/1.1
 content-type: application/json
 
 {
@@ -78,4 +84,4 @@ content-type: application/json
 }
 
 ### Delete contact by ID - MUST REPLACE ID!!!
-DELETE https://cse341-afb3.onrender.com/contacts/6516ddabfc426d06c536a77f
+DELETE https://cse341-afb3.onrender.com/contacts/6516e12171be9aaadadc3571
