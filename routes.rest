@@ -72,7 +72,7 @@ content-type: application/json
 }
 
 ### Update existing contact - MUST REPLACE ID!!!
-PUT https://cse341-afb3.onrender.com/contacts/6516e0d471be9aaadadc3570 HTTP/1.1
+PUT https://cse341-afb3.onrender.com/contacts/651864be11a4764e27e72c9e HTTP/1.1
 content-type: application/json
 
 {
@@ -84,4 +84,4 @@ content-type: application/json
 }
 
 ### Delete contact by ID - MUST REPLACE ID!!!
-DELETE https://cse341-afb3.onrender.com/contacts/6516e12171be9aaadadc3571
+DELETE https://cse341-afb3.onrender.com/contacts/651864be11a4764e27e72c9e

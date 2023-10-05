@@ -4,6 +4,15 @@ const contactsController = require('../controllers/contacts');
 
 const router = express.Router();
 
+router.use('/',
+  (docData = (req, res) => {
+    let docData = {
+      documentationURL: 'https://nathanbirch.github.io/nathan-byui-api-docs',
+    };
+    res.send(docData);
+  })
+);
+
 // get all contacts from db
 router.get('/', contactsController.getAllContacts);
 
