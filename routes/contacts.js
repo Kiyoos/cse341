@@ -7,7 +7,7 @@ const router = express.Router();
 router.use('/',
   (docData = (req, res) => {
     let docData = {
-      documentationURL: 'https://nathanbirch.github.io/nathan-byui-api-docs',
+      documentationURL: 'https://https://cse341-afb3.onrender.com/contacts/api-docs',
     };
     res.send(docData);
   })
