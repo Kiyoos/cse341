@@ -5,12 +5,12 @@ const doc = {
     title: 'My API',
     description: 'Contacts API',
   },
-  host: 'cse341-afb3.onrender.com/contacts',
-  schemes: ['https'],
+  host: 'cse341-afb3.onrender.com',
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
-const endpointsFiles = ['./routes/contacts.js'];
+const endpointsFiles = ['./routes/index.js'];
 
 /* NOTE: if you use the express Router, you must pass in the 
    'endpointsFiles' only the root file where the route starts,
