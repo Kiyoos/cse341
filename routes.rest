@@ -1,5 +1,8 @@
 // LOCALHOST REQUESTS
 
+### get api-docs
+GET http://localhost:3000/api-docs
+
 ### get all contacts info
 GET http://localhost:3000/contacts
 
@@ -43,6 +46,9 @@ content-type: application/json
 DELETE http://localhost:3000/contacts/6516d9acfc426d06c536a77d
 
 // RENDER REQUESTS
+
+### API Docs on Render
+GET https://cse341-afb3.onrender.com/api-docs
 
 ### get all contacts info on Render
 GET https://cse341-afb3.onrender.com/contacts
