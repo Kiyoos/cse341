@@ -39,7 +39,7 @@ const createContact = async (req, res) => {
   }
 };
 
-// Put/Update a Contact NOT FINISHED!!!
+// Put/Update a Contact
 const updateContact = async (req, res) => {
   // req.params.id will grab the requested id for the json file
   const userId = new ObjectId(req.params.id);

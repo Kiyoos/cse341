@@ -2,15 +2,6 @@ const express = require('express');
 const router = express.Router();
 const contactsController = require('../controllers/contacts');
 
-// router.use('/',
-//   (docData = (req, res) => {
-//     let docData = {
-//       documentationURL: 'https://https://cse341-afb3.onrender.com/contacts/api-docs',
-//     };
-//     res.send(docData);
-//   })
-// );
-
 // get all contacts from db
 router.get('/', contactsController.getAllContacts);
 
