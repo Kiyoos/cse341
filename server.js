@@ -1,11 +1,10 @@
 const express = require('express');
-// const cors = require('cors');
 const app = express();
+// const cors = require('cors');
 // const MongoClient = require('mongodb').MongoClient;
 const mongodb = require('./db/connect');
 const bodyParser = require('body-parser');
 // const contactsRoutes = require('./routes/contacts');
-
 // const swaggerUi = require('swagger-ui-express');
 // const swaggerDocument = require('./swagger.json');
 
@@ -21,7 +20,7 @@ app
     res.setHeader('Access-Control-Allow-Origin', '*');
     next();
   })
-  .use('/', require('./routes'))
+  .use('/', require('./routes'));
 
 mongodb.initDb((err) => {
   if (err) {

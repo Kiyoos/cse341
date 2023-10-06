@@ -22,7 +22,6 @@ const getSingleContact = async (req, res) => {
   });
 };
 
-
 // Post/Create a new Contact
 const createContact = async (req, res) => {
   const contact = {
@@ -30,7 +29,7 @@ const createContact = async (req, res) => {
     lastName: req.body.lastName,
     birthday: req.body.birthday,
     email: req.body.email,
-    favoriteColor: req.body.favoriteColor    
+    favoriteColor: req.body.favoriteColor
   };
   const result = await mongodb.getDb().db().collection('contacts').insertOne(contact);
   if (result.acknowledged) {
@@ -49,10 +48,14 @@ const updateContact = async (req, res) => {
     lastName: req.body.lastName,
     birthday: req.body.birthday,
     email: req.body.email,
-    favoriteColor: req.body.favoriteColor    
+    favoriteColor: req.body.favoriteColor
   };
   // .updateOne({_id: userId}) deletes the user id that was entered above
-  const result = await mongodb.getDb().db().collection('contacts').replaceOne({ _id: userId }, contact);
+  const result = await mongodb
+    .getDb()
+    .db()
+    .collection('contacts')
+    .replaceOne({ _id: userId }, contact);
   console.log(result);
   if (result.modifiedCount > 0) {
     res.status(204).send();
@@ -66,7 +69,7 @@ const deleteContact = async (req, res) => {
   // req.params.id will grab the requested id for the json file
   const userId = new ObjectId(req.params.id);
   // .deleteOne({_id: userId}) deletes the user id that was entered above
-  const result = await mongodb.getDb().db().collection('contacts').deleteOne({_id: userId});
+  const result = await mongodb.getDb().db().collection('contacts').deleteOne({ _id: userId });
   if (result.acknowledged) {
     res.status(200).json(result);
   } else {
